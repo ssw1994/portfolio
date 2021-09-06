@@ -1,6 +1,12 @@
 import React from "react";
+import * as Components from "../../components";
 
 function About() {
-  return <h1>About</h1>;
+  return (
+    <div className="about">
+      <Components.IntroCard></Components.IntroCard>
+    </div>
+  );
 }
-export default About;
+//export default About;
+export default Components.PageWrapper(About);

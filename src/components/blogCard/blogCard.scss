@@ -1,0 +1,49 @@
+@import "../../css/variables";
+@import "../../css/position.scss";
+.blog-card {
+  width: 100%;
+  border: 0.5px solid $border-color;
+  min-height: 250px;
+  height: 300px;
+  max-height: 350px;
+  background: $current-background;
+  color: $current-foreground;
+  line-height: 1.2;
+  letter-spacing: 1px;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
+  .blog-title {
+    @extend .b-image;
+    @extend .center-items;
+    @extend .flex-col;
+
+    & div:last-of-type {
+      font-size: $normal;
+    }
+    font-weight: bolder;
+    color: $current-foreground;
+    height: 45%;
+    padding: 15px;
+    font-size: $extra-large;
+  }
+
+  .blog-summary {
+    @extend .center-items;
+    @extend .center-text;
+    padding: 15px;
+    height: 30%;
+    font-size: $normal;
+    line-height: 1.3;
+  }
+
+  .blog-feedbacks {
+    @extend .right-items;
+
+    button {
+      cursor: pointer;
+    }
+  }
+}

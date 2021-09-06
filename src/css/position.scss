@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+}
+.flex-col {
+  @extend .flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  @extend .flex;
+  flex-direction: row;
+}
+.center-items {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-items {
+  @extend .flex;
+  justify-content: flex-start;
+}
+
+.right-items {
+  @extend .flex;
+  justify-content: flex-end;
+}
+
+.b-image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: cover;
+}
+
+.center-text {
+  text-align: center;
+}
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}

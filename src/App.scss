@@ -1,0 +1,21 @@
+@import "./styles.scss";
+
+.App {
+  @extend .flex;
+  @extend .h-100;
+  @include breakpoint(desktop) {
+    flex-direction: row;
+  }
+  @include breakpoint(mobileonly) {
+    flex-direction: column;
+  }
+  .sidebar {
+    background-color: $current-background;
+    color: $current-foreground;
+  }
+  .content {
+    padding: 15px 0;
+    overflow: auto;
+    flex-grow: 1;
+  }
+}

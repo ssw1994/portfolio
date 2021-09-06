@@ -1,6 +1,28 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import * as Components from "../../components";
+import { fetchBlogs } from "../../store/dispatchers/blog.dispatch";
+import { allBlogs } from "../../store/selectors/blog.selector";
+import { BlogCard } from "../../components";
+import "./blogs.scss";
 function Blogs() {
-  return <h1>Blogs</h1>;
+  const blogs = useSelector(allBlogs);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBlogs());
+  }, []);
+  return (
+    <div className="blogs">
+      {blogs.map((blog, index) => {
+        return (
+          <div className="blog-container" key={index}>
+            <BlogCard blog={blog} />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-export default Blogs;
+//export default Blogs;
+export default Components.PageWrapper(Blogs);

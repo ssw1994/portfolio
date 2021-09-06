@@ -9,8 +9,8 @@ export default function Routing() {
     //   <Route path="/" exact component={links[0].component}></Route>
     // </Switch>
     <Switch>
-      {links.map((page) => {
-        return <Route exact {...page} />;
+      {links.map((page, index) => {
+        return <Route exact {...page} key={index} />;
       })}
     </Switch>
   );

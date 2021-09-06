@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import SideBar from "./components/sidebar/sidebar";
 import Routing from "./routing/routing";
@@ -10,7 +10,7 @@ function App() {
         <div className="sidebar">
           <SideBar></SideBar>
         </div>
-        <div>
+        <div className="content">
           <Routing></Routing>
         </div>
       </div>

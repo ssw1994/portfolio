@@ -1,0 +1,100 @@
+{
+  "firstName": "Sachin",
+  "lastName": "Waghmare",
+  "role": [
+    {
+      "fromYear": "2016",
+      "toYear": "2017",
+      "position": "Junior Software Engineer",
+      "company": "NCPL",
+      "years": "1.2",
+      "projects": [
+        {
+          "projectName": "Clouzer",
+          "techStack": [
+            {
+              "language": "Angular",
+              "version": "5"
+            },
+            { "language": "Javascript", "version": "" },
+            { "language": "Redux", "version": "" }
+          ],
+          "description": "Money ware is web based Financial Project , which has features like creating User Account, Opening SIP,SWP and STP. It has other features like Shareholder Meeting,Proxy Voting,Voluntary Corporate Action etc"
+        }
+      ]
+    },
+    {
+      "fromYear": "2017",
+      "toYear": "2019",
+      "position": "Software Engineer",
+      "company": "Iniquus IT Services Ltd",
+      "years": "2",
+      "projects": [
+        {
+          "projectName": "OrderWork",
+          "techStack": [
+            {
+              "language": "Angular",
+              "version": "5"
+            },
+            { "language": "Javascript", "version": "" },
+            { "language": "jQuery", "version": "" }
+          ],
+          "description": "OrderWork is a Web based Work management tool of OrderWork Limited, United Kingdom. It has option to create services, clients, and work orders with auto matching. Professionals can register to this portal via onboarding module. Auto matching is performing with multiple criteria such as location, pricing, and schedule of particular services."
+        },
+        {
+          "projectName": "Investor Pro",
+          "techStack": [
+            {
+              "language": "Angular",
+              "version": "2+"
+            },
+            { "language": "Javascript", "version": "" },
+            { "language": "HTML", "version": "" },
+            { "language": "CSS", "version": "" },
+            { "language": "jQuery", "version": "" }
+          ],
+          "description": "Investor Service Provider is a financial domain of Motilal Oswal Financial Services Ltd. It has option to create new clients, accounts. Main modules are Corpus Funding, Cash Reconciliation, Stock Reconciliation, Systematic Transfer, Amount switching, Systematic withdraw, Systematic Investment, Redemption, Account Closure."
+        }
+      ]
+    },
+    {
+      "fromYear": "2019",
+      "toYear": "2021",
+      "position": "Software Engineer",
+      "company": "BBD India",
+      "isCurrentCompany": true,
+      "years": "1.4",
+      "projects": [
+        {
+          "projectName": "Vodocom",
+          "techStack": [
+            {
+              "language": "React",
+              "version": "16+"
+            },
+            { "language": "react-redux", "version": "" },
+            { "language": "HTML", "version": "" },
+            { "language": "CSS", "version": "" },
+            { "language": "jQuery", "version": "" }
+          ],
+          "description": "Worked on update eligibility Module where user can check there update eligibility and request for upgrade online,can see recommended deals for them."
+        },
+        {
+          "projectName": "Standard Bank SA",
+          "techStack": [
+            {
+              "language": "Angular",
+              "version": "9"
+            },
+            { "language": "NgRx", "version": "" },
+            { "language": "HTML", "version": "" },
+            { "language": "CSS", "version": "" },
+            { "language": "RxJS", "version": "" }
+          ],
+          "description": "The Standard Bank of South Africa Limited is a South African financial services group and is Africa's biggest lender by assets. The company's corporate headquarters, Standard Bank Centre, is situated in Simmonds Street, Johannesburg.Worked on Standard bank project as a part of win-web team. Participated in various team activity ,scrum,sprint planning’s and retro’s etc.Worked on Angular,NgRx,Rxjs,HTML,CSS etc in this project."
+        }
+      ]
+    }
+  ]
+}

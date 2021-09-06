@@ -1,0 +1,77 @@
+@import "../../css/variables";
+@import "../../css/breakpoints";
+.history {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(desktop) {
+    .even-card {
+      position: relative;
+      left: 310px;
+      border-left: 1px solid $primary;
+
+      &::before {
+        content: ".";
+        display: block;
+        color: white;
+        position: relative;
+        font-weight: bolder;
+        font-size: 80px;
+        left: -14px;
+      }
+    }
+    .odd-card {
+      border-right: 1px solid $primary;
+
+      &::after {
+        content: ".";
+        display: block;
+        color: white;
+        position: relative;
+        font-weight: bolder;
+        font-size: 80px;
+        left: 16px;
+      }
+    }
+  }
+
+  .card {
+    display: inherit;
+    @include breakpoint(desktop) {
+      max-width: 300px;
+      width: 300px;
+    }
+
+    @include breakpoint(mobileonly) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.year-history {
+  display: inline-block;
+  width: 100%;
+
+  .period,
+  .years {
+    font-weight: bolder;
+  }
+
+  .company {
+    font-weight: bold;
+  }
+  .position {
+    font-family: cursive;
+  }
+}
+.even-card {
+  .year-history {
+    background: $background_5;
+  }
+}
+
+.odd-card {
+  .year-history {
+    background: $background_6;
+  }
+}
