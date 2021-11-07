@@ -1,0 +1,23 @@
+@import "../../css/variables";
+@import "../../css/position.scss";
+.tasks_buckets {
+  @extend .flex-row;
+
+  & > div {
+    flex: 1;
+
+    border: 1px dotted gray;
+
+    .task_card {
+      margin: 15px;
+
+      .task_header {
+        @extend .flex-row;
+
+        & div:first-of-type {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

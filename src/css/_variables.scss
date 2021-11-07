@@ -1,0 +1,32 @@
+$primary: white;
+$secondary: gray;
+$background_1: #b690fd;
+$background_2: #60c9b2;
+$background_3: #40e6c7;
+$background_4: rgb(2, 0, 36);
+$background_5: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(124, 146, 167, 1) 50%,
+  rgba(65, 87, 103, 1) 100%
+);
+$background_6: linear-gradient(
+  90deg,
+  rgba(65, 87, 103, 1) 0%,
+  rgba(124, 146, 167, 1) 50%,
+  rgba(2, 0, 36, 1) 100%
+);
+$danger: red;
+$success: green;
+
+$border-color: black;
+
+$small: 12px;
+$normal: 14px;
+$medium: 16px;
+$large: 20px;
+$extra-large: 24px;
+
+$box-shadow: 0 0 10px 5px $background_4;
+$current-background: $background_4;
+$current-foreground: $background_3;
