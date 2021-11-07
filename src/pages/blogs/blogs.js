@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import * as Components from "../../components";
+import { PageWrapper } from "../../components";
 import { fetchBlogs } from "../../store/dispatchers/blog.dispatch";
 import { allBlogs } from "../../store/selectors/blog.selector";
 import { BlogCard } from "../../components";
@@ -25,4 +25,4 @@ function Blogs() {
   );
 }
 //export default Blogs;
-export default Components.PageWrapper(Blogs);
+export default PageWrapper(Blogs);

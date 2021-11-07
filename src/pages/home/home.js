@@ -1,5 +1,5 @@
 import React from "react";
-import * as Components from "../../components";
+import { PageWrapper } from "../../components";
 
 function Home() {
   return (
@@ -8,5 +8,4 @@ function Home() {
     </div>
   );
 }
-//export default Home;
-export default Components.PageWrapper(Home);
+export default PageWrapper(Home);

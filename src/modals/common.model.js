@@ -6,10 +6,16 @@ export const Status = {
 };
 
 export const Api = {
-  baseUrl: "../mocks/",
+  baseUrl: "./mocks/",
 };
 
 export const API_ENDPOINTS = {
   get_user_details: "user.mock.json",
-  get_blogs: "/users/blogs",
+  get_blogs: "blog.mock.json",
+};
+
+export const AllTaskStatus = {
+  open: "OPEN",
+  inprogress: "IN_PROGRESS",
+  done: "DONE",
 };

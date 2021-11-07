@@ -1,12 +1,8 @@
 import React from "react";
-import * as Components from "../../components";
+import { PageWrapper } from "../../components";
 
 function About() {
-  return (
-    <div className="about">
-      <Components.IntroCard></Components.IntroCard>
-    </div>
-  );
+  return <div className="about"></div>;
 }
 //export default About;
-export default Components.PageWrapper(About);
+export default PageWrapper(About);

@@ -1,35 +1,50 @@
-import { Button } from "antd";
-import { DislikeOutlined, LikeOutlined } from "@ant-design/icons";
-import { useHistory } from "react-router-dom";
+import {
+  ICONS,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  CardHeader,
+  IconButton,
+  Typography,
+} from "../../components/shared";
 import "./blogCard.scss";
 export default function BlogCard({ blog }) {
-  const history = useHistory();
-  const getBackGroundImageStyle = () => {
-    return { backgroundImage: `url("${blog.image}")` };
-  };
+  const card = (
+    <Card className="blog-card">
+      <CardHeader title={blog.title} className="blog-title"></CardHeader>
+      <CardMedia image={blog.image} height="150" component="img" />
+      <CardContent className="blog-summary">
+        <Typography>{blog.summary}</Typography>
+      </CardContent>
+      <CardActions class="blog-actions">
+        <IconButton>
+          <ICONS.ThumbDownAltOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <ICONS.ThumbUpAltOutlinedIcon />
+        </IconButton>
+      </CardActions>
+    </Card>
+  );
 
-  const gotoBlogDetails = (event) => {
-    event && event.stopPropagation();
-    history.push({
-      pathname: `/blogs/${blog.id}`,
-    });
-  };
+  return card;
+}
 
-  return (
-    <div className="blog-card" onClick={(event) => gotoBlogDetails(event)}>
+/**
+ *  <div className="blog-card" onClick={(event) => gotoBlogDetails(event)}>
       <div className="blog-title" style={getBackGroundImageStyle()}>
         <div>{blog.title}</div>
         <div>{blog.date}</div>
       </div>
       <div className="blog-summary">{blog.summary}</div>
       <div className="blog-feedbacks">
-        <Button>
-          <DislikeOutlined />
-        </Button>
-        <Button>
-          <LikeOutlined />
-        </Button>
+        <IconButton>
+          <ICONS.ThumbDownAltOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <ICONS.ThumbUpAltOutlinedIcon />
+        </IconButton>
       </div>
     </div>
-  );
-}
+ */

@@ -1,7 +1,7 @@
 import * as Pages from "../pages";
 export const links = [
   { menu: "About", path: "/about", component: Pages.About, isMenu: true },
-  { menu: "Home", path: "/", component: Pages.Home, isMenu: true },
+  { menu: "Home", path: "/home", component: Pages.Home, isMenu: true },
   {
     menu: "Contact Us",
     path: "/contactus",
@@ -15,5 +15,11 @@ export const links = [
     path: "/blogs/:id",
     component: Pages.BlogDetails,
     isMenu: false,
+  },
+  {
+    menu: "My Tasks",
+    path: "/tasks",
+    component: Pages.MyTasks,
+    isMenu: true,
   },
 ];

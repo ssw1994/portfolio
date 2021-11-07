@@ -4,4 +4,5 @@ import Career from "./career/career";
 import Contact from "./contact/contact";
 import Blogs from "./blogs/blogs";
 import BlogDetails from "./blogDetails/blogDetails";
-export { About, Home, Career, Contact, Blogs, BlogDetails };
+import MyTasks from "./mytasks/mytasks";
+export { About, Home, Career, Contact, Blogs, BlogDetails, MyTasks };
