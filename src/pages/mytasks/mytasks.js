@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { PageWrapper } from "../../components";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -20,18 +20,6 @@ import { AllTaskStatus } from "../../modals/common.model";
 function MyTasks() {
   let tasks = useSelector(allTasks);
   const dispatch = useDispatch();
-
-  const editTask = (task) => {
-    tasks = tasks.map((t) => {
-      if (t._id === task._id) {
-        return {
-          ...t,
-          isEdit: true,
-        };
-      }
-      return t;
-    });
-  };
 
   const taskCard = (task, key) => {
     if (task.isEdit) {
@@ -59,8 +47,10 @@ function MyTasks() {
   };
 
   useEffect(() => {
-    dispatch(getAllTasks());
-  }, []);
+    if (dispatch) {
+      dispatch(getAllTasks());
+    }
+  }, [dispatch]);
 
   return (
     <div className="tasks_buckets">

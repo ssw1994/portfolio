@@ -8,8 +8,10 @@ function BlogDetails() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchBlogDetails(id));
-  }, []);
+    if (dispatch && id) {
+      dispatch(fetchBlogDetails(id));
+    }
+  }, [dispatch, id]);
   return (
     <div className="blogs-details">
       <div className="decoration"></div>

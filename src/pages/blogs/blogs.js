@@ -10,8 +10,10 @@ function Blogs() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchBlogs());
-  }, []);
+    if (dispatch) {
+      dispatch(fetchBlogs());
+    }
+  }, [dispatch]);
   return (
     <div className="blogs">
       {blogs.map((blog, index) => {
