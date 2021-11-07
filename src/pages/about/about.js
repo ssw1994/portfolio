@@ -1,6 +1,8 @@
 import React from "react";
+import { PageWrapper } from "../../components";
 
 function About() {
-  return <h1>About</h1>;
+  return <div className="about"></div>;
 }
-export default About;
+//export default About;
+export default PageWrapper(About);
