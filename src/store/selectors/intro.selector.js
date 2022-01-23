@@ -1,5 +1,5 @@
-export const introDetails = (state) => state.userReducer.introDetails;
+export const introDetails = (state) => state.userState.introDetails;
 export const currentRole = (state) =>
-  state.userReducer.introDetails?.role.filter(
+  state.userState.introDetails?.role.filter(
     (role) => role.isCurrentCompany === true
   )[0];

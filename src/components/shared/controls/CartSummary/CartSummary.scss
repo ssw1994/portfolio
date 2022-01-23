@@ -1,0 +1,34 @@
+.cart-summary {
+  height: 100%;
+  // .MuiCard-root{
+  //     background:var(--current-background);
+  // }
+
+  .MuiCardHeader-content {
+    .span {
+      font-weight: bolder;
+    }
+  }
+  .MuiCardContent-root {
+    display: flex;
+
+    & > div:last-of-type {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .cart_items {
+    overflow: auto;
+  }
+
+  .cart_total {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: aliceblue;
+  }
+}

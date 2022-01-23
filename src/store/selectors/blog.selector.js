@@ -1,1 +1,1 @@
-export const allBlogs = (state) => state.blogReducer.blogs;
+export const allBlogs = (state) => state.blogState.blogs;

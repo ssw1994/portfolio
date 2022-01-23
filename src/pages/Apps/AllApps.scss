@@ -1,0 +1,40 @@
+@import "../../css/breakpoints";
+
+.all-apps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  @include breakpoint(mobileonly) {
+    flex-direction: column;
+  }
+
+  height: 100%;
+  .MuiCard-root {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+
+    .MuiCardHeader-title {
+      font-weight: bolder;
+    }
+
+    @include breakpoint(mobileonly) {
+      margin: 15px 0;
+    }
+    .MuiSvgIcon-root {
+      width: 3em;
+      height: 3em;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px 5px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.product {
+  .MuiCardMedia-root {
+    height: 65%;
+    width: 100%;
+  }
+  .MuiCardContent-root {
+    height: 20%;
+    .product_name,
+    .product_price {
+      text-align: center;
+    }
+  }
+
+  // .MuiCardActions-root {
+  //   display: none;
+  // }
+  .MuiCardActions-root {
+    //height: 15%;
+    button {
+      position: absolute;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
+}

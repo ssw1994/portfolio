@@ -1,0 +1,10 @@
+@import "../../css";
+.contact-me {
+  @include breakpoint(tablet) {
+    width: 50%;
+  }
+
+  @include breakpoint(mobileonly) {
+    width: 100%;
+  }
+}

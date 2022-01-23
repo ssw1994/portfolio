@@ -1,0 +1,36 @@
+.my-cart-container {
+  margin: 0 35px;
+  cursor: pointer;
+  .MuiSvgIcon-root {
+    fill: red;
+    height: 1.2em;
+    width: 1.2em;
+  }
+
+  .cart_item_count {
+    .MuiBadge-badge {
+      background: yellow;
+      font-weight: bolder;
+    }
+  }
+}
+
+.cart-summary {
+  .MuiPopover-paper {
+    width: 350px;
+    height: 500px;
+    overflow: auto;
+
+    .cart-content {
+      height: 100%;
+      .card-summary-header {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    & ::-webkit-scrollbar {
+      width: 5px !important; /* width of the entire scrollbar */
+    }
+  }
+}

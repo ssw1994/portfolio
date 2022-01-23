@@ -1,0 +1,13 @@
+@import "../../../css/position.scss";
+.MuiDialogTitle-root {
+  button {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.MuiDialogContent-root {
+  padding: 0 !important;
+}

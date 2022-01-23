@@ -1,0 +1,23 @@
+@import "../../../css/breakpoints.scss";
+.create-product {
+  display: flex;
+  width: 100%;
+  @include breakpoint(desktop) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(mobileonly) {
+    flex-direction: column;
+  }
+  .product_creation_form {
+    @include breakpoint(desktop) {
+      width: 75%;
+    }
+  }
+  .product_preview {
+    background: aliceblue;
+    @include breakpoint(desktop) {
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  .MuiAvatar-root {
+    background: red;
+    font-weight: bolder;
+    color: black;
+    margin-right: 15px;
+  }
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    button {
+      margin-right: 25px;
+    }
+  }
+}
