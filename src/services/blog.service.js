@@ -1,9 +1,9 @@
-import Http from ".";
+import http from ".";
 import { API_ENDPOINTS } from "../modals/common.model";
 
 export default (function () {
   const getBlogs = () => {
-    return Http({ method: "GET", url: API_ENDPOINTS.get_blogs });
+    return http.get(API_ENDPOINTS.get_blogs);
   };
 
   return {

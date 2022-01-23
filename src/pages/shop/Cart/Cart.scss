@@ -1,0 +1,21 @@
+@import "../../../css/breakpoints.scss";
+.user-cart {
+  padding: 15px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  .cart_items {
+    margin-bottom: 100px;
+    @include breakpoint(desktop) {
+      width: 75%;
+    }
+  }
+  .carts_summary {
+    @include breakpoint(desktop) {
+      position: fixed;
+      width: 25%;
+      right: 15px;
+      top: 90px;
+    }
+  }
+}

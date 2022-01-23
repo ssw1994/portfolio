@@ -1,0 +1,49 @@
+@import "../../../css/variables";
+@import "../../../css/position.scss";
+.tasks_buckets {
+  @extend .flex-row;
+
+  & > div {
+    flex: 1;
+
+    border: 1px dotted gray;
+
+    .task_card {
+      margin: 15px;
+      .task_header {
+        @extend .flex-row;
+
+        & div:first-of-type {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.task_add_card {
+  width: 100%;
+}
+
+.add-task-container {
+  @extend .center-items;
+  width: 100%;
+  button {
+    border: 1px dashed $current-foreground;
+  }
+}
+
+.task_list {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: flex;
+    margin: 15px;
+    border-bottom: 0.5px solid gray;
+  }
+
+  li.add-task-action-menu {
+    border-bottom: none;
+  }
+}

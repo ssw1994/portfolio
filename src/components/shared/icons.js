@@ -1,5 +1,33 @@
 import ThumbDownAltOutlinedIcon from "@material-ui/icons/ThumbDownAltOutlined";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
-import { Edit, Delete } from "@material-ui/icons";
+import RemoveIcon from "@material-ui/icons/RemoveCircleOutlineSharp";
 
-export { ThumbUpAltOutlinedIcon, ThumbDownAltOutlinedIcon, Edit, Delete };
+import {
+  Edit,
+  Delete,
+  Close,
+  Add,
+  VisibilityOff,
+  Visibility,
+  ShoppingBasket,
+  LibraryBooks,
+  Work,
+  Dash,
+  Menu,
+} from "@material-ui/icons";
+
+export {
+  ThumbUpAltOutlinedIcon,
+  ThumbDownAltOutlinedIcon,
+  Edit,
+  Delete,
+  Close,
+  Add,
+  Visibility,
+  VisibilityOff,
+  RemoveIcon,
+  Work,
+  ShoppingBasket,
+  LibraryBooks,
+  Menu,
+};

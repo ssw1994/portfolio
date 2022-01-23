@@ -68,6 +68,40 @@ export default function taskReducer(state = initialState, action) {
           data: _tasks,
         },
       };
+
+    case taskAction.CREATE_TASK:
+      return {
+        ...state,
+        lastAdded: {
+          ...state.lastAdded,
+          status: Status.busy,
+        },
+      };
+    case taskAction.CREATE_TASK_SUCCESS:
+      return {
+        ...state,
+        lastAdded: {
+          ...state.lastAdded,
+          status: Status.success,
+        },
+      };
+    case taskAction.CREATE_TASK_FAILURE:
+      return {
+        ...state,
+        lastAdded: {
+          ...state.lastAdded,
+          status: Status.error,
+        },
+      };
+    case taskAction.RESET_LAST_ADDED_STATUS: {
+      return {
+        ...state,
+        lastAdded: {
+          ...state.lastAdded,
+          status: Status.none,
+        },
+      };
+    }
     default:
       return { ...state };
   }

@@ -1,0 +1,23 @@
+@import "../../../css/position.scss";
+.product_list {
+  @extend .flex-row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+  gap: 15px;
+  height: 100%;
+  margin-bottom: 100px;
+  overflow: auto;
+  .MuiCard-root {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    &:hover {
+      box-shadow: 5px 5px 10px;
+      cursor: pointer;
+    }
+  }
+  .MuiCard-root:last-of-type {
+    margin-bottom: 150px;
+  }
+}

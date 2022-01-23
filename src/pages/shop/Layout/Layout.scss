@@ -1,0 +1,14 @@
+@import "../../../css/breakpoints.scss";
+.shop_app {
+  & > div:first-of-type {
+    @include breakpoint(desktop) {
+      position: fixed;
+      margin-top: 75px;
+    }
+    @include breakpoint(mobileonly) {
+      position: fixed;
+      margin-top: 75px;
+      width: 95%;
+    }
+  }
+}

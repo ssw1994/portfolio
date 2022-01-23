@@ -1,0 +1,7 @@
+@import "../../../css";
+
+.contact-me-container {
+  @extend .center-items;
+  height: 100vh;
+  background-color: var(--current-background);
+}

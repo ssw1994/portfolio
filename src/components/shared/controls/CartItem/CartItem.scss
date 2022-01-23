@@ -1,0 +1,41 @@
+@import "../../../../css/breakpoints.scss";
+.cart_item_details {
+  .MuiCardContent-root {
+    display: flex;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+    @include breakpoint(mobileonly) {
+      flex-direction: column;
+    }
+
+    & > div:first-of-type {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @include breakpoint(desktop) {
+        width: 25%;
+      }
+    }
+    .product_details {
+      padding: 15px;
+      * {
+        line-height: 2;
+      }
+      @include breakpoint(desktop) {
+        width: 60%;
+      }
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      button {
+        margin: 5px 0px;
+      }
+      @include breakpoint(desktop) {
+        width: 15%;
+      }
+    }
+  }
+}

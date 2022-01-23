@@ -2,7 +2,6 @@
 
 .App {
   @extend .flex;
-  @extend .h-100;
   @include breakpoint(desktop) {
     flex-direction: row;
   }
@@ -10,12 +9,11 @@
     flex-direction: column;
   }
   .sidebar {
-    background-color: $current-background;
-    color: $current-foreground;
+    background-color: var(--current-background);
+    color: var(--current-foreground);
   }
   .content {
-    padding: 15px 0;
-    overflow: auto;
+    overflow: hidden;
     flex-grow: 1;
   }
 }
@@ -24,4 +22,12 @@
 .MuiFormControl-root {
   width: 100%;
   margin: 10px 0px;
+}
+.MuiCardActions-root {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.MuiChip-root {
+  margin: 5px !important;
 }
